@@ -7,11 +7,11 @@ public class test {
 
         ElementBibliotheque elementt = new  Oeuvre();
         System.out.println("TVA de base  "+elementt.getTVA());
-        ElementBibliotheque element = new OeuvreCatégorieRomance(new Oeuvre());
-        System.out.println("TVA  Pour les livres de catégorie romance "+element.getTVA());
+        ElementBibliotheque element = new Livre(new Oeuvre());
+        System.out.println("TVA  Pour les livres "+element.getTVA());
 
-        ElementBibliotheque element2 = new OeuvreCatégorieHorreur(new Oeuvre());
-        System.out.println("TVA Pour les livres de catégorie horreur "+element2.getTVA());
+        ElementBibliotheque element2 = new Magazine(new Oeuvre());
+        System.out.println("TVA Pour les Magazine "+element2.getTVA());
     }
 }
 

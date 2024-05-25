@@ -3,7 +3,7 @@ package control;
 import Utility.BibalExceptions;
 import java.util.ArrayList;
 import Modele.Oeuvre;
-import decorateur.OeuvreCatégorieRomance;
+import decorateur.Livre;
 import interfaces.ElementBibliotheque;
 
 
@@ -27,7 +27,7 @@ public class OeuvreControl {
 
     public static void modifier(Oeuvre oeuvre) throws BibalExceptions {
 
-        ElementBibliotheque oeuvreAvecDetails = new OeuvreCatégorieRomance(oeuvre);
+        ElementBibliotheque oeuvreAvecDetails = new Livre(oeuvre);
 
         // Utilisez l'objet décoré selon vos besoins
         System.out.println(oeuvreAvecDetails.toString());
@@ -66,7 +66,7 @@ public class OeuvreControl {
 
     public static ArrayList<Oeuvre> getListOeuvres() throws BibalExceptions {
         Oeuvre oeuvre = new Oeuvre();
-        ElementBibliotheque oeuvreAvecDetails = new OeuvreCatégorieRomance(oeuvre);
+        ElementBibliotheque oeuvreAvecDetails = new Livre(oeuvre);
 
         // Utilisez l'objet décoré selon vos besoins
         System.out.println(oeuvreAvecDetails.toString());

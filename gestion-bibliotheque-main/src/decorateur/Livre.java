@@ -2,8 +2,8 @@ package decorateur;
 
 import interfaces.ElementBibliotheque;
 
-public class OeuvreCatégorieHorreur extends DecorateurElementBibliotheque {
-    public OeuvreCatégorieHorreur(ElementBibliotheque elementBibliotheque) {
+public class Livre extends DecorateurElementBibliotheque {
+    public Livre(ElementBibliotheque elementBibliotheque) {
         super(elementBibliotheque);
     }
     @Override
@@ -12,3 +12,6 @@ public class OeuvreCatégorieHorreur extends DecorateurElementBibliotheque {
         return super.getTVA()+40;
     }
 }
+
+
+
